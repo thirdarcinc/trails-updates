@@ -1,8 +1,10 @@
-# Trails Extension Updates
+# Trails Updates
 
-This public repository contains the latest published versions of the Trails browser extension.
+This public repository contains metadata used to show Trails product update notices and in-app alerts.
 
-Update `versions.json` only after the corresponding release is available in its store. Chrome and Edge versions may be updated independently.
+## Browser extension versions
+
+The Trails browser extension reads `versions.json`. Update a store's version only after the corresponding release is available in that store. Chrome and Edge versions may be updated independently.
 
 ```json
 {
@@ -15,4 +17,6 @@ Update `versions.json` only after the corresponding release is available in its 
 }
 ```
 
-The extension compares the appropriate value with its installed manifest version and displays an update message only when the published version is higher.
+The extension displays its update message only when the appropriate published version is higher than its installed manifest version.
+
+Additional metadata for the Trails web app can be added alongside `versions.json` as its in-app alert system is introduced.
